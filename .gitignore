@@ -1,0 +1,60 @@
+# Logs
+*.log
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Mac
+.DS_Store
+
+# -------------------------
+# WORDPRESS
+# -------------------------
+
+# Ignore all WordPress core
+tienda/wp-admin/
+tienda/wp-includes/
+
+# Ignore root WP files
+tienda/*.php
+tienda/*.txt
+tienda/*.html
+
+# Keep wp-content
+!tienda/wp-content/
+
+# Ignore uploads/cache
+tienda/wp-content/uploads/
+tienda/wp-content/cache/
+tienda/wp-content/litespeed/
+tienda/wp-content/upgrade/
+
+# Ignore plugins
+tienda/wp-content/plugins/
+
+# Ignore languages
+tienda/wp-content/languages/
+
+# Ignore mu plugins
+tienda/wp-content/mu-plugins/
+
+# Ignore default themes
+tienda/wp-content/themes/twentytwenty*
+tienda/wp-content/themes/storefront/
+
+# Keep ONLY your custom theme
+!tienda/wp-content/themes/jodearelectro/
+
+# Backup files
+*.zip
+backup*
+updraft*
+
+# Hostinger / cache
+tienda/.private/
+tienda/.htaccess.bk
+tienda/wp-content/.litespeed_conf.dat
+tienda/wp-content/object-cache.php

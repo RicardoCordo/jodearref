@@ -1,0 +1,164 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+.masthead-heading,
+.navbar-brand {
+  font-family: "Racing Sans One", cursive !important;
+  letter-spacing: 3px;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+}
+.text-white {
+  color: #fff8f0 !important;
+}
+.masthead {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+  background-image: url("../assets/img/background.svg");
+  background-attachment: fixed;
+}
+.masthead-avatar-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 4px var(--bs-secondary);
+}
+
+.masthead-avatar-wrapper > .img-fluid {
+  border-radius: 50%;
+
+}
+.portfolio-item {
+  cursor: default !important;
+    height: 100%;
+
+}
+
+#about {
+  background: rgb(28, 73, 76);
+  background: linear-gradient(
+    180deg,
+    rgba(28, 73, 76, 1) 0%,
+    rgba(96, 178, 229, 1) 80%,
+    rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) 100%
+  );
+}
+
+#whatsapp-button {
+  background: #25d366;
+  color: #fff8f0;
+  position: fixed;
+  right: 5%;
+  bottom: 3%;
+  z-index: 15;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+#whatsapp-button:hover {
+  background: green;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #fff8f0;
+  --bs-tooltip-color: black;
+}
+
+#loader {
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 73, 76, 1) 0%,
+    rgba(96, 178, 229, 1) 80%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999999999;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.gooey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+}
+.dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 0;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+.dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+.dots > span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.hidden {
+  opacity: 0 !important;
+  z-index: -1 !important;
+}
+
+.mySwiper > .swiper-wrapper > .swiper-slide>.img-fluid {
+  height: 70px;
+}
+.mySwiper > .swiper-wrapper > .swiper-slide {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.portfolio-item > .swiper > .swiper-wrapper > .swiper-slide>.img-fluid {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-item>.img-fluid {
+  height: 500px;
+  width: 100%;
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}

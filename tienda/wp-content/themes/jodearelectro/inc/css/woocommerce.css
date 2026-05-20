@@ -1,0 +1,184 @@
+.loop_product_title {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+span.onsale {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    background: var(--danger);
+    color: var(--warning);
+    z-index: 1;
+}
+
+.price {
+    font-size: 1rem;
+    color: var(--muted);
+    text-align: left;
+}
+.price del {
+    opacity: 1;
+    color: var(--white);
+}
+
+.price ins,
+.price>.amount>bdi {
+    color: var(--danger);
+    font-weight: 600;
+}
+
+button.single_add_to_cart_button.button,
+.add_to_cart_button,
+.jodear_add_to_cart_button,
+a.button.jodear_consultar_button {
+
+    background: var(--primary);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    transition: all 0.25s;
+}
+
+button.single_add_to_cart_button.button:hover,
+.add_to_cart_button:hover,
+.jodear_add_to_cart_button:hover,
+a.button.jodear_consultar_button:hover {
+    background-color: var(--white);
+    color: var(--secondary);
+}
+
+.quantity .qty {
+    border-radius: 4px;
+}
+
+.add_to_cart_button,
+.jodear_add_to_cart_button {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+ul.products li.product .price {
+    margin-bottom: 0;
+}
+
+.single-product div.product .woocommerce-product-gallery img {
+    width: 100%;
+}
+
+.storefront-sticky-add-to-cart {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.single-product #primary {
+    width: 100%;
+}
+
+.single-product #secondary,
+.woocommerce-checkout #secondary,
+.woocommerce-cart #secondary,
+.woocommerce-account #secondary,
+.privacy-policy #secondary {
+    display: none;
+}
+
+
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.widget a.button.checkout {
+    background-color: var(--success);
+}
+
+.widget a.button.checkout:hover {
+    background-color: #306d22;
+}
+
+body.woocommerce-cart {
+    color: var(--white);
+}
+
+.wc-block-cart a.wc-block-components-product-name {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.wc-block-cart-item__total .price.wc-block-components-product-price {
+    color: var(--danger);
+}
+
+.wc-block-cart__submit-container>.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained {
+    background: var(--primary);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.wc-block-cart__submit-container>.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained:hover {
+    background: var(--white);
+    color: var(--secondary);
+}
+
+.wc-block-components-order-summary .wc-block-components-order-summary-item .price {
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+}
+.woocommerce-checkout .wc-block-components-product-price__value.is-discounted {
+    margin: 0;
+}
+#secondary .widget ul,
+#secondary .widget ul a {
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.wc-block-product-filters__open-overlay.argytec {
+    background-color: transparent;
+    color: var(--white);
+    display: none;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 1.618em;
+}
+
+@media (min-width: 768px) {
+
+    .woocommerce-checkout #primary,
+    .woocommerce-cart #primary {
+        width: 100%;
+        max-width: 1300px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+           .jodear-ordering-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wc-block-product-filters__open-overlay.argytec {
+        display: flex;
+    }
+
+    :where(.wc-block-product-filters).is-overlay-opened .wc-block-product-filters__overlay-dialog {
+        background-color: var(--black);
+    }
+}
