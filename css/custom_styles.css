@@ -131,16 +131,18 @@ h3 {
   opacity: 0 !important;
   z-index: -1 !important;
 }
+.mySwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  padding: 0; /* importante: eliminar desbalance */
+}
 
-.mySwiper > .swiper-wrapper > .swiper-slide>.img-fluid {
-  height: 70px;
-}
-.mySwiper > .swiper-wrapper > .swiper-slide {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.swiper-wrapper {
-  transition-timing-function: linear !important;
+.mySwiper .swiper-slide img {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
 }
 
 .portfolio-item > .swiper > .swiper-wrapper > .swiper-slide>.img-fluid {
