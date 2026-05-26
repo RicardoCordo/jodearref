@@ -131,15 +131,18 @@ h3 {
   opacity: 0 !important;
   z-index: -1 !important;
 }
-.mySwiper .swiper-slide {
+
+
+/* CONTENEDOR DEL LOGO */
+.logo-marca {
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
-  padding: 0; /* importante: eliminar desbalance */
 }
 
-.mySwiper .swiper-slide img {
+/* IMAGEN DEL LOGO */
+.logo-marca img {
   max-height: 70px;
   width: auto;
   object-fit: contain;
