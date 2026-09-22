@@ -522,92 +522,93 @@ gtag('config', 'G-1L6M6T69RH');
             target="_blank">
             Mas información
           </a>
-      </div>
+        </div>
     </section>
-    <!-- Contact Section-->
-    <section class="page-section bg-light" id="contacto">
-      <div class="container">
-        <!-- Contact Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿NECESITÁS UNA COTIZACIÓN?
-        </h2>
-        <h3 class="text-center text-secondary mt-3 mb-4">
-          Un asesor técnico responderá tu consulta en menos de 24hs.
-        </h3>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon">
-            <i class="fa-sharp fa-light fa-snowflake"></i>
-          </div>
-          <div class="divider-custom-line"></div>
+  </div>
+  <!-- Contact Section-->
+  <section class="page-section bg-light" id="contacto">
+    <div class="container">
+      <!-- Contact Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿NECESITÁS UNA COTIZACIÓN?
+      </h2>
+      <h3 class="text-center text-secondary mt-3 mb-4">
+        Un asesor técnico responderá tu consulta en menos de 24hs.
+      </h3>
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fa-sharp fa-light fa-snowflake"></i>
         </div>
-        <!-- Contact Section Form-->
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-xl-7">
-            <form id="contactForm" action="mail.php" method="post">
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Contact Section Form-->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+          <form id="contactForm" action="mail.php" method="post">
 
-              <!-- Product/Service input-->
-              <div class="form-floating mb-3">
-                <select class="form-select bg-light" id="producto" name="producto" required>
-                  <option value="" selected disabled>Seleccionar categoría de consulta</option>
-                  <option value="Cámaras Frigoríficas Walk in Cooler">
-                    Cámaras Frigoríficas Walk in Cooler
-                  </option>
-                  <option value="Sistemas de climatización Light Commercial">
-                    Sistemas de climatización Light Commercial
-                  </option>
-                  <option value="Aire Acondicionado y Calefacción Central">
-                    Aire Acondicionado y Calefacción Central
-                  </option>
-                  <option value="Repuestos de Refrigeración">
-                    Repuestos de Refrigeración
-                  </option>
-                  <option value="Calefacción y Calderas">
-                    Calefacción y Calderas
-                  </option>
-                </select>
+            <!-- Product/Service input-->
+            <div class="form-floating mb-3">
+              <select class="form-select bg-light" id="producto" name="producto" required>
+                <option value="" selected disabled>Seleccionar categoría de consulta</option>
+                <option value="Cámaras Frigoríficas Walk in Cooler">
+                  Cámaras Frigoríficas Walk in Cooler
+                </option>
+                <option value="Sistemas de climatización Light Commercial">
+                  Sistemas de climatización Light Commercial
+                </option>
+                <option value="Aire Acondicionado y Calefacción Central">
+                  Aire Acondicionado y Calefacción Central
+                </option>
+                <option value="Repuestos de Refrigeración">
+                  Repuestos de Refrigeración
+                </option>
+                <option value="Calefacción y Calderas">
+                  Calefacción y Calderas
+                </option>
+              </select>
+            </div>
+            <!-- Name input-->
+            <div class="form-floating mb-3">
+              <input class="form-control bg-light" id="name" type="text" placeholder="Enter your name..." name="name"
+                required />
+              <label for="name">Nombre</label>
+              <div class="invalid-feedback" data-sb-feedback="name:required">
+                Por favor ingrese su nombre.
               </div>
-              <!-- Name input-->
-              <div class="form-floating mb-3">
-                <input class="form-control bg-light" id="name" type="text" placeholder="Enter your name..." name="name"
-                  required />
-                <label for="name">Nombre</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  Por favor ingrese su nombre.
-                </div>
+            </div>
+            <!-- Email address input-->
+            <div class="form-floating mb-3">
+              <input class="form-control bg-light" id="email" type="email" placeholder="nombre@example.com" name="email"
+                required />
+              <label for="email">Email</label>
+              <div class="invalid-feedback" data-sb-feedback="email:required">
+                Por favor ingrese su email.
               </div>
-              <!-- Email address input-->
-              <div class="form-floating mb-3">
-                <input class="form-control bg-light" id="email" type="email" placeholder="nombre@example.com"
-                  name="email" required />
-                <label for="email">Email</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  Por favor ingrese su email.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  El email no es válido.
-                </div>
+              <div class="invalid-feedback" data-sb-feedback="email:email">
+                El email no es válido.
               </div>
-              <!-- Phone number input-->
-              <div class="form-floating mb-3"> <input class="form-control bg-light" id="phone" type="tel"
-                  placeholder="(123) 456-7890" name="phone" required /> <label for="phone">Teléfono</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required"> Por favor ingrese su teléfono. </div>
-              </div>
+            </div>
+            <!-- Phone number input-->
+            <div class="form-floating mb-3"> <input class="form-control bg-light" id="phone" type="tel"
+                placeholder="(123) 456-7890" name="phone" required /> <label for="phone">Teléfono</label>
+              <div class="invalid-feedback" data-sb-feedback="phone:required"> Por favor ingrese su teléfono. </div>
+            </div>
 
-              <div class="form-floating mb-3"> <textarea class="form-control bg-light" name="message" id="message"
-                  type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea> <label
-                  for="message">Mensaje</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required"> Por favor ingrese un mensaje. </div>
-              </div>
-              <!-- Submit Button-->
-              <button class="btn btn-primary btn-xl" id="submitButton" type="submit">
-                Enviar
-              </button>
-            </form>
-          </div>
+            <div class="form-floating mb-3"> <textarea class="form-control bg-light" name="message" id="message"
+                type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea> <label
+                for="message">Mensaje</label>
+              <div class="invalid-feedback" data-sb-feedback="message:required"> Por favor ingrese un mensaje. </div>
+            </div>
+            <!-- Submit Button-->
+            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">
+              Enviar
+            </button>
+          </form>
         </div>
       </div>
-  </div>
+    </div>
+    </div>
   </section>
   <!-- Footer-->
   <footer class="footer text-center">
