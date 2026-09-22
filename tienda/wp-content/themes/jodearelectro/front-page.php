@@ -10,7 +10,7 @@ get_header();
                     <div class="column">
                         <div class="slide-header">
                             <h1 class="section-title">DESCUENTOS</h2>
-                            <p class="section-subtitle">DE OTOÑO</p>
+                            <p class="section-subtitle">DE PRIMAVERA</p>
                             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/front-page/arrows.png' ?>" alt="" class="arrows">
                         </div>
                         <div class="mini-row">

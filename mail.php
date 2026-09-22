@@ -3,11 +3,11 @@
 header("Access-Control-Allow-Origin: *");
 
 if ($_POST) {
-
-    $name    = $_POST['name'];
-    $from    = $_POST['email'];
-    $phone   = $_POST['phone'];
-    $message = $_POST['message'];
+$producto = $_POST['producto'];
+$name     = $_POST['name'];
+$from     = $_POST['email'];
+$phone    = $_POST['phone'];
+$message  = $_POST['message'];
 
     $to      = "jodearrefrigeracion@gmail.com";
     $subject = "Nueva consulta desde jodear.com.ar";
@@ -16,7 +16,7 @@ if ($_POST) {
     <html>
     <body>
         <h2>Nueva consulta desde la web</h2>
-
+        <p><strong>Categoría de consulta:</strong> {$producto}</p>
         <p><strong>Nombre:</strong> {$name}</p>
         <p><strong>Email:</strong> {$from}</p>
         <p><strong>Teléfono:</strong> {$phone}</p>

@@ -1,19 +1,23 @@
 * {
   font-family: "Poppins", sans-serif !important;
 }
+
 .masthead-heading,
 .navbar-brand {
   font-family: "Racing Sans One", cursive !important;
   letter-spacing: 3px;
 }
+
 h1,
 h2,
 h3 {
   letter-spacing: 1px;
 }
+
 .text-white {
   color: #fff8f0 !important;
 }
+
 .masthead {
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +25,7 @@ h3 {
   background-image: url("../assets/img/background.svg");
   background-attachment: fixed;
 }
+
 .masthead-avatar-wrapper {
   background-color: white;
   display: flex;
@@ -30,26 +35,32 @@ h3 {
   border: solid 4px var(--bs-secondary);
 }
 
-.masthead-avatar-wrapper > .img-fluid {
+.masthead-avatar-wrapper>.img-fluid {
   border-radius: 50%;
 
 }
+
 .portfolio-item {
   cursor: default !important;
-    height: 100%;
+  height: 100%;
 
 }
 
-#about {
-  background: rgb(28, 73, 76);
-  background: linear-gradient(
-    180deg,
-    rgba(28, 73, 76, 1) 0%,
-    rgba(96, 178, 229, 1) 80%,
-    rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) 100%
-  );
+#seccion-degradado {
+  background: linear-gradient(180deg,
+      rgba(28, 73, 76, 1) 0%,
+      rgba(96, 178, 229, 1) 40%,
+      rgba(255, 255, 255, 1) 100%);
 }
 
+#about,
+#servicios {
+  background: transparent !important;
+}
+#producto {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
 #whatsapp-button {
   background: #25d366;
   color: #fff8f0;
@@ -67,6 +78,7 @@ h3 {
   cursor: pointer;
   transition: all 0.25s;
 }
+
 #whatsapp-button:hover {
   background: green;
 }
@@ -78,10 +90,9 @@ h3 {
 
 #loader {
   background-repeat: no-repeat;
-  background: linear-gradient(
-    180deg,
-    rgba(28, 73, 76, 1) 0%,
-    rgba(96, 178, 229, 1) 80%);
+  background: linear-gradient(180deg,
+      rgba(28, 73, 76, 1) 0%,
+      rgba(96, 178, 229, 1) 80%);
   position: absolute;
   left: 0;
   right: 0;
@@ -100,6 +111,7 @@ h3 {
   height: 40px;
   margin: -20px 0 0 -71px;
 }
+
 .dot {
   position: absolute;
   width: 16px;
@@ -111,13 +123,15 @@ h3 {
   transform: translateX(0);
   animation: dot 2.8s infinite;
 }
+
 .dots {
   transform: translateX(0);
   margin-top: 12px;
   margin-left: 31px;
   animation: dots 2.8s infinite;
 }
-.dots > span {
+
+.dots>span {
   display: block;
   float: left;
   width: 16px;
@@ -131,10 +145,12 @@ h3 {
   opacity: 0 !important;
   z-index: -1 !important;
 }
+
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-.mySwiper > .swiper-wrapper > .swiper-slide>.img-fluid {
+
+.mySwiper>.swiper-wrapper>.swiper-slide>.img-fluid {
   height: 70px;
 }
 
@@ -154,10 +170,11 @@ h3 {
   object-fit: contain;
 }
 
-.portfolio-item > .swiper > .swiper-wrapper > .swiper-slide>.img-fluid {
+.portfolio-item>.swiper>.swiper-wrapper>.swiper-slide>.img-fluid {
   height: 450px;
   width: 100%;
 }
+
 .portfolio-item>.img-fluid {
   height: 450px;
   width: 100%;
@@ -168,6 +185,7 @@ h3 {
     transform: translateX(96px);
   }
 }
+
 @keyframes dots {
   50% {
     transform: translateX(-31px);
